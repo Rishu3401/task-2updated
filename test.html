@@ -1,0 +1,215 @@
+<html>
+    <header>
+        <style>
+            .rishu {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .kumar {
+                width: 100%;
+                border: 1px solid black;
+                display: flex;
+                border-top: 4px solid #008080;
+                padding: 3px;
+                box-shadow: -3px 3px 8px rgba(0, 0, 0, 0.5), 0 0 0 transparent;
+            }
+            
+            .trapoid {
+                width: 13em;
+                position: relative;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                border-top: none;
+                border-left: none;
+                background-size: 90% 3px, 3px 90%,  100% 100%;
+                overflow: hidden;
+                text-align: center;
+                border-top-right-radius: 8px;
+                color: white;
+                background-color: #173645;
+                box-shadow: inset 0 0 10px #706f6c;
+            }
+            
+            .trapoid:before {
+                content: '';
+                padding: 10.5% 100%;
+                margin: 9px -6em -36px -0.5em;
+                float: left;
+                text-align: match-parent;
+                transform-origin: bottom left;
+                border-bottom: none; /* Remove the border-bottom property */
+                transform: rotate(-40deg);
+                box-shadow: 0px 5px 13px -5px rgb(165, 154, 154); /* Add a bottom shadow effect */
+                background-color:white;
+            }
+            
+            .triangle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-indent: -13.5em;
+                margin: 0;
+                padding: 0;
+                max-width: 13em;
+                width: 100%;
+                box-sizing: border-box;
+                border-top-right-radius: 8px;
+                border-top: none;
+                border-left: none;
+                background-size: 90% 3px, 3px 90%,  100% 100%;
+                overflow: hidden;
+                text-align: center;
+                color: white;
+                box-shadow: inset 0 0 10px #706f6c;
+            }
+            
+            .triangle+p {
+                width: 50em;
+            }
+            
+            .triangle:before {
+                content: '';
+                padding: 9.5% 57%;
+                margin: 0 0 0 -0.5em;
+                float: left;
+                text-align: match-parent;
+                box-shadow: 0px 2px 4px 0px #706f6c;
+                transform-origin: bottom left;
+                border-bottom: none; /* Remove the border-bottom property */
+                transform: rotate(-40deg);
+                box-shadow: 0px 5px 13px -5px rgb(165, 154, 154); /* Add a bottom shadow effect */
+                background-color:white;
+            }
+            
+            .box {
+                flex: none;
+                width: 100%;
+            }
+            
+            .box {
+                margin: 1px;
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                border-radius: 7px;
+            }
+            
+            .box:nth-last-child(-n+2) {
+                flex-basis: calc(25% - 14px); 
+            }
+            
+            .row,
+            .row-1 {
+                flex: 1;
+                border: 2px solid black;
+                padding: 5px;
+                text-align: center;
+                font-weight:bold;
+                box-shadow: inset 0 0 10px #706f6c;
+            }
+            
+            .row {
+                background-color: white;
+                border-top: white;
+            }
+            
+            .row-1 {
+                background-color: #7DC4E1;
+                color: #000099; /* Updated text color to dark blue (#000099) */
+                padding: 1%;
+                height: auto;
+                border-top-right-radius: 8px;
+                border-top-left-radius: 8px;
+            }
+            
+            .subtriangle {
+                color: #000099;
+                font-weight: bold;
+            }
+            .subtrapoid {
+              color: white;
+              font-weight: bold;
+         
+            }
+            
+            @media (max-width: 600px) {
+                .trapoid {
+                    width: 100%;
+                }
+                
+                .triangle {
+                    margin: 1em;
+                    max-width: 100%;
+                }
+                
+                .box {
+                    width: calc(100% / 4 - 14px);
+                }
+                
+                .row-1 {
+                    padding: 10px;
+                    height: 50px;
+                }
+            }
+        </style>
+    </header>
+    <body>
+        <div>
+            <div class="rishu">
+                <div class="trapoid">
+                    <div class="subtrapoid">Quotation Details </div>
+                </div>
+                <div class="triangle">
+                    <div class="subtriangle">Other Details</div>
+                </div>
+                <div class="triangle">
+                    <div class="subtriangle">Request Details</div>
+                </div>
+                <div class="triangle">
+                    <div class="subtriangle">Notes & Terms
+                    </div>
+                </div>
+                <div class="triangle">
+                    <div class="subtriangle">Branch</div>
+                </div>
+                <div class="triangle">
+                  <div class="subtriangle">Signatories
+                  </div>
+              </div>
+            </div>
+            <div class="kumar">
+                <div class="box">
+                    <div class="row-1">MPR</div>
+                    <div class="row">Row 2</div>
+                </div>
+                <div class="box">
+                    <div class="row-1">Quotation Due</div>
+                    <div class="row">Row 2</div>
+                </div>
+                <div class="box">
+                    <div class="row-1">Project Code</div>
+                    <div class="row">Row 2</div>
+                </div>
+                <div class="box">
+                    <div class="row-1">Client Name</div>
+                    <div class="row">Row 2</div>
+                </div>
+                <div class="box">
+                    <div class="row-1">Client Reference Name/Attention To</div>
+                    <div class="row">Row 2</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
